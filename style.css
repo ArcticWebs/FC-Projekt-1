@@ -1,0 +1,96 @@
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.navigation-bar {
+  height: 50px;
+
+  background-color: black;
+}
+
+.nav-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.company-logo {
+  height: 30px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #f1f1f1;
+}
+
+/* HEADER */
+.main-header {
+  height: 580px;
+  background-image: url(assets/header.jpg);
+}
+
+.main-header-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header-content {
+  height: 215px;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-header-description {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-header-button {
+  height: 40px;
+  width: 160px;
+
+  border: 3px solid #ffffff;
+  background-color: #c4c4c400;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* OUR CREW */
+
+.person-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
