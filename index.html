@@ -6,7 +6,11 @@
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/tablet.css" />
+    <link
+      rel="stylesheet"
+      href="styles/tablet.css"
+      media="(min-width: 768px)"
+    />
     <link rel="stylesheet" href="styles/laptop.css" />
     <link rel="stylesheet" href="styles/desktop.css" />
 
@@ -43,9 +47,7 @@
           <p class="main-header-description">
             Nie wierz nam na słowo - sprawdź
           </p>
-          <a href="#services"
-            ><button class="main-header-button">Oferta</button></a
-          >
+          <a href="#services" class="main-header-button">Oferta</a>
         </div>
       </section>
       <div class="main-header-overlay"></div>
@@ -59,7 +61,7 @@
             <div class="person-image person1-image"></div>
             <div class="person-description">
               <h4 class="person-name">Imię i Nazwisko dział</h4>
-              <p>
+              <p class="person-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 vel massa et lacus egestas cursus a non magna. Fusce scelerisque
                 blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
@@ -72,7 +74,7 @@
             <div class="person-image person2-image"></div>
             <div class="person-description">
               <h4 class="person-name">Imię i Nazwisko dział</h4>
-              <p>
+              <p class="person-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 vel massa et lacus egestas cursus a non magna. Fusce scelerisque
                 blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
@@ -86,25 +88,27 @@
       <!-- SERVICES -->
       <section class="services-section">
         <section class="container">
-          <h2 id="services" class="our-crew-h2">Co robimy?</h2>
-          <div class="service-boxex">
+          <h2 id="services" class="services-h2">Co robimy?</h2>
+          <div class="service-boxes">
             <div class="service-box">
               <p class="service-description">Usługa 1</p>
+              <p>(nowość)</p>
+              <div class="new-service-dot"></div>
             </div>
             <div class="service-box">
-              <p class="service-description">Usługa 1</p>
+              <p class="service-description">Usługa 2</p>
             </div>
             <div class="service-box">
-              <p class="service-description">Usługa 1</p>
+              <p class="service-description">Usługa 3</p>
             </div>
             <div class="service-box">
-              <p class="service-description">Usługa 1</p>
+              <p class="service-description">Usługa 4</p>
             </div>
             <div class="service-box">
-              <p class="service-description">Usługa 1</p>
+              <p class="service-description">Usługa 5</p>
             </div>
             <div class="service-box">
-              <p class="service-description">Usługa 1</p>
+              <p class="service-description">Usługa 6</p>
             </div>
           </div>
         </section>

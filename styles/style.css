@@ -1,5 +1,8 @@
 /* GLOBAL */
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -12,7 +15,7 @@ body {
 }
 
 .container {
-  width: calc(100% - 16px);
+  width: calc(100% - 20px);
   margin: 0 auto;
 }
 
@@ -20,6 +23,7 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+
 /* NAVIGATION */
 
 .navigation-bar {
@@ -40,19 +44,11 @@ a {
 }
 
 .nav-items {
-  display: flex;
-  gap: 50px;
-
-  font-size: 18px;
-  font-weight: 400;
-
-  cursor: pointer;
+  display: none;
 }
 
-.disabled {
-  cursor: not-allowed;
-}
 /* HEADER */
+
 .main-header {
   height: 100vh;
   background-image: url(/assets/header.jpg);
@@ -75,6 +71,7 @@ a {
   background-color: black;
   opacity: 0.5;
 }
+
 .main-header-section {
   height: 100%;
   display: flex;
@@ -104,10 +101,14 @@ a {
 }
 
 .main-header-button {
-  height: 40px;
   width: 160px;
 
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+
   border: 3px solid #ffffff;
+  border-radius: 5px;
   background-color: #c4c4c400;
 
   color: #ffffff;
@@ -141,14 +142,17 @@ a {
   margin-bottom: 50px;
 }
 
+.our-crew-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .person {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   gap: 50px;
-
-  margin-bottom: 50px;
 }
 
 .person-image {
@@ -185,6 +189,10 @@ a {
   font-weight: 700;
 }
 
+.person-text {
+  text-align: justify;
+}
+
 /* SERVICES */
 
 .services-section {
@@ -193,7 +201,15 @@ a {
   background-color: rgb(25, 5, 5);
 }
 
-.service-boxex {
+.services-h2 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.service-boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,6 +217,7 @@ a {
 }
 .service-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -209,9 +226,19 @@ a {
   height: 300px;
 
   background-color: #ffffff;
+  border-radius: 5px;
 
   color: black;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 5px 5px rgba(255, 255, 255, 0.5));
+
+  position: relative;
+}
+
+@media (hover: hover) {
+  .service-box:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
 }
 
 .service-description {
@@ -219,7 +246,20 @@ a {
   font-weight: 400;
 }
 
+.new-service-dot {
+  width: 30px;
+  height: 30px;
+
+  background-color: rgb(32, 61, 226);
+  border-radius: 50%;
+
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
 /* FOOTER */
+
 .footer {
   height: 140px;
 }

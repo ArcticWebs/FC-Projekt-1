@@ -1,7 +1,22 @@
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   /* GLOBAL */
   .container {
-    width: calc(100% - 32px);
+    width: calc(100% - 40px);
+  }
+
+  /* NAVIGATION */
+  .nav-items {
+    display: flex;
+    gap: 50px;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    cursor: pointer;
+  }
+
+  .disabled {
+    cursor: not-allowed;
   }
 
   /* HEADER */
@@ -26,14 +41,33 @@
   }
 
   /* SERVICES */
-  .service-boxex {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
+  .services-h2 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+
+    margin: 0 auto;
+
+    width: 500px;
   }
 
   .service-box {
     width: 200px;
     height: 200px;
+  }
+  .new-service-dot {
+    width: 20px;
+    height: 20px;
+
+    top: -10px;
+    left: -10px;
   }
 
   /* FOOTER */

@@ -1,7 +1,11 @@
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   /* GLOBAL */
-
   .container {
     width: 960px;
+  }
+
+  /* SERVICES */
+  .service-boxes {
+    width: 800px;
   }
 }
