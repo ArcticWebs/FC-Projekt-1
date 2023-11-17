@@ -1,0 +1,47 @@
+@media screen and (min-width: 769px) {
+  /* GLOBAL */
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  /* HEADER */
+  .main-header-content {
+    width: 50%;
+    max-width: none;
+  }
+
+  /* OUR CREW */
+  .our-crew-h2 {
+    text-align: left;
+  }
+
+  .person {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .person:nth-last-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  /* SERVICES */
+  .service-boxex {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .service-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* FOOTER */
+  .footer {
+    height: 70px;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
