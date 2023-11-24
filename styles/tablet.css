@@ -36,9 +36,17 @@
     justify-content: space-between;
   }
 
-  .person:nth-last-of-type(odd) {
+  .person:nth-of-type(even) {
     flex-direction: row-reverse;
   }
+
+  .person-description {
+    text-align: start;
+  }
+
+  /* .person-description:nth-of-type(even) {
+    text-align: right;
+  } */
 
   /* SERVICES */
 

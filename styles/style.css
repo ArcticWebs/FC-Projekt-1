@@ -183,14 +183,12 @@ a {
   gap: 30px;
 
   font-size: 18px;
+
+  text-align: justify;
 }
 
 .person-name {
   font-weight: 700;
-}
-
-.person-text {
-  text-align: justify;
 }
 
 /* SERVICES */
@@ -222,8 +220,8 @@ a {
   align-items: center;
   flex-shrink: 0;
 
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
 
   background-color: #ffffff;
   border-radius: 5px;
@@ -276,6 +274,8 @@ a {
 
   font-size: 18px;
   font-weight: 700;
+
+  text-align: center;
 }
 
 .sm-icon {
