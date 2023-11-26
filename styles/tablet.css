@@ -41,12 +41,12 @@
   }
 
   .person-description {
-    text-align: start;
+    text-align: left;
   }
 
-  /* .person-description:nth-of-type(even) {
+  .person:nth-of-type(even) .person-description {
     text-align: right;
-  } */
+  }
 
   /* SERVICES */
 
