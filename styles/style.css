@@ -102,6 +102,7 @@ a {
 
 .main-header-button {
   width: 160px;
+  /* Lepiej by bylo dodać :fit-content */
 
   padding: 10px 0;
   display: block;
