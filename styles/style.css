@@ -6,15 +6,7 @@ html {
 * {
   box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-}
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: black;
@@ -60,12 +52,17 @@ a {
 .main-header {
   height: 100vh;
   background-image: url(/assets/header.jpg);
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   position: relative;
+}
+@supports (background-attachment: fixed) {
+  .main-header {
+    background-attachment: fixed;
+  }
 }
 
 .main-header-overlay {
